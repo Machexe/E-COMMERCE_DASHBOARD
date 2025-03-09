@@ -20,10 +20,10 @@ st.set_page_config(
 # Function to load dataset
 @st.cache_data
 def load_data():
-    customers_ndf = pd.read_csv("customers_dataset.csv")
-    orders_ndf = pd.read_csv("orders_dataset_cleaned.csv")
-    order_items_ndf = pd.read_csv("order_items_dataset_cleaned.csv")
-    geolocation_ndf = pd.read_csv("geolocation_dataset_cleaned.csv")
+    customers_ndf = pd.read_csv("./dashboard/customers_dataset.csv")
+    orders_ndf = pd.read_csv("./dashboard/orders_dataset_cleaned.csv")
+    order_items_ndf = pd.read_csv("./dashboard/order_items_dataset_cleaned.csv")
+    geolocation_ndf = pd.read_csv("./dashboard/geolocation_dataset_cleaned.csv")
     return customers_ndf, orders_ndf, order_items_ndf, geolocation_ndf
 
 # Function to convert date columns
